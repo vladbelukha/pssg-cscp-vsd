@@ -43,6 +43,7 @@ namespace Gov.Cscp.VictimServices.Public.Models.Extensions
                         vsd_cvap_sessiondate = lineItem.sessionDate,
                         vsd_cvap_sessionduration = lineItem.sessionHours,
                         vsd_missedsession = lineItem.missedSession,
+                        vsd_attendingsupportperson = null, // TODO: lineItem.attendingSupportPersonName when introduced in Dynamics model
                     }
                 );
             }
@@ -108,6 +109,7 @@ namespace Gov.Cscp.VictimServices.Public.Models.Extensions
                             sessionHours = item.vsd_cvap_sessionduration,
                             missedSession = item.vsd_missedsession,
                             sessionDate = item.vsd_cvap_sessiondate,
+                            attendingSupportPersonName = "test", // TODO: item.vsd_attendingsupportperson when introduced in Dynamics model
                         }
                     );
                 }
