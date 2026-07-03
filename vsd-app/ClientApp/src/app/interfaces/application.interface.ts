@@ -171,6 +171,7 @@ export interface EmploymentIncomeInformation {
 }
 export interface RepresentativeInformation {
   completingOnBehalfOf?: number;
+  applicantSameContactInfo?: boolean;
   documents: DocumentCollectioninformation[];
   mostRecentMailingAddressSameAsPersonal: boolean;
   relationshipToPerson: string;
